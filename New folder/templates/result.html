@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url("sudheer.jpg");
+     
+        }
+        
+        .result-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 40px #c228c5;
+            padding: 20px;
+            width: 300px;
+            border:solid 3px #200120;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #770282;
+            margin-bottom: 20px;
+        }
+        
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        
+        .result-heart-disease {
+            color: #e53935;
+        }
+        
+        .result-no-heart-disease {
+            color: #4caf50;
+        }
+        
+        button {
+            background-color: #770282;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #c228c5;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Prediction Result</h2>
+        <p class="result">{{ result }}</p>
+        {% if result == "Heart Disease" %}
+            <p class="result-heart-disease">You are predicted to have Heart Disease.</p>
+        {% else %}
+            <p class="result-no-heart-disease">You are predicted to be Healthy.</p>
+        {% endif %}
+        <button onclick="window.history.back();">Back</button>
+    </div>
+</body>
+</html>

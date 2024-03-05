@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="../static/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form id="heartDiseaseForm" action="/predict" method="post">
+            <label for="age"><strong>Age:</strong></label>
+            <input type="number" id="age" name="age" min="0" required  placeholder="Enter your age : ">
+            <label for="sex"><strong>Gender:</strong></label>
+            <select id="sex" name="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+                
+            </select>
+           
+            <label for="trestbps"><strong>trestbps:</strong></label>
+            <input type="number" id="trestbps" name="trestbps" min="0" required placeholder="Enter your trestbps : ">
+            <label for="chol"><strong>chol:</strong></label>
+            <input type="number" id="chol" name="chol" min="0" required placeholder="Enter your chol : ">
+            <label for="fbs"><strong>fbs:</strong></label>
+            <input type="number" id="fbs" name="fbs" min="0" required placeholder="Enter your fbs: ">
+            <label for="restecg"><strong>restecg:</strong></label>
+            <input type="number" id="restecg" name="restecg" min="0" required placeholder="Enter your restecg : ">
+            <label for="thalach"><strong>Thalach:</strong></label>
+            <input type="number" id="thalach" name="thalach" min="0" required placeholder="Enter your Thalach: ">
+            <label for="exang"><strong>exang:</strong></label>
+            <input type="number" id="exang" name="exang" min="0" required placeholder="Enter your exang : ">
+            <label for="oldpeak"><strong>Oldpeak:</strong></label>
+            <input type="number" id="oldpeak" name="oldpeak" min="-3" max="3" required placeholder="Enter your Oldpeak : ">
+            <label for="slope"><strong>slope:</strong></label>
+            <input type="number" id="slope" name="slope" min="0" required placeholder="Enter your slope : ">
+            <label for="ca"><strong>CA:</strong></label>
+            <input type="number" id="ca" name="ca" min="0" required placeholder="Enter your CA : ">
+            <label for="thal"><strong>Thal:</strong></label>
+            <input type="number" id="thal" name="thal" min="0" required placeholder="Enter your thal : ">
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+</body>
+</html>

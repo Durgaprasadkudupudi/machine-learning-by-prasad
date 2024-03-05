@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("//sudheer.jpg");
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #110202;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(164, 7, 207, 0.91);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #140235;
+    transition: padding 0.5s, border-radius 0.5s;
+}
+
+h1:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #110202;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: padding 0.5s, border-radius 0.5s;
+}
+
+button:hover {
+    background-color: #04cf36;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
